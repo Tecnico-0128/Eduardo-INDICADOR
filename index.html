@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empresa Computaria</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Empresa Computaria</h1>
+      <div id="divMenu">
+        <a href="inicio.html"><p>Início</p></a>
+        <a href="index.html"><p>Funcionários</p></a>
+      </div>
+    </header>
+    <main>
+      <h2>Funcionários</h2>
+      <form>
+        <p>
+          <label for="nome">Nome</label>
+        </p>
+        <input id="nome" type="text" required />
+        <p>
+          <label for="cpf">CPF</label>
+        </p>
+        <input id="cpf" type="text" required />
+        <p>
+          <label for="data">Data de Nascimento</label>
+        </p>
+        <input id="data" type="date" required />
+        <p>
+          <label for="salario">Salário</label>
+        </p>
+        <input id="salario" type="number" required />
+        <p>
+          <label for="funcao">Função</label>
+        </p>
+        <input id="funcao" type="text" required />
+        <button id="botaoCadastrar" type="button" onclick="cadastrar()">Cadastrar</button>
+      </form>
+      <h2>Ativos</h2>
+      <div id="listaAtivo"></div>
+      <h2>Desativos</h2>
+      <div id="listaDesativo"></div>
+    </main>
+  </body>
+</html>

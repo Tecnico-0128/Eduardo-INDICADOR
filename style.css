@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor1: #0f4f49;
+  --cor2: #b8be9b;
+  --cor3: #d0cdc6;
+  --cor4: #95ab9c;
+  --cor5: #cdd7e0;
+}
+
+body {
+  background-color: var(--cor2);
+}
+
+header {
+  background-color: var(--cor1);
+
+  h1 {
+    text-align: center;
+    padding-block: 3%;
+    color: var(--cor3);
+    font-size: 200%;
+  }
+
+  #divMenu {
+    display: flex;
+    justify-self: center;
+
+    a {
+      text-decoration: none;
+
+      p {
+        font-size: 110%;
+        font-weight: bold;
+        text-align: center;
+        background-color: var(--cor4);
+        color: var(--cor1);
+        width: 10vw;
+        height: 5vh;
+        border: 1px solid var(--cor5);
+        border-bottom: none;
+        padding-top: 5%;
+      }
+    }
+  }
+}
+
+main{
+  background-color: white;
+  margin: auto;
+  margin-top: 1%;
+  width: 70vw;
+  border-radius: 7px;
+  padding: 2%;
+  text-align: center;
+
+  #inicio{
+    font-size: 300%;
+    font-weight: bold;
+    color: var(--cor1);
+  }
+
+  h2{
+    color: var(--cor1);
+    font-size: 230%;
+    margin-bottom: 3%;
+  }
+
+  label{
+    color: var(--cor1);
+    font-size: 120%;
+  }
+
+  input{
+    border: none;
+    border-radius: 7px;
+    background-color: var(--cor5);
+    width: 25vw;
+    padding: 1%;
+    margin-top: .5%;
+    margin-bottom: 1.5%;
+  }
+
+  #botaoCadastrar{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--cor1);
+    color: var(--cor5);
+    font-size: 120%;
+    font-weight: bold;
+    width: 30vw;
+    height: 8vh;
+    margin-block: 5%;
+  }
+
+  #listaAtivo{
+    border: 1px solid black;
+    min-height: 30vh;
+
+    p{
+      padding: .5%;
+      margin-bottom: 2%;
+      font-size: 120%;
+    }
+
+    button{
+      border: none;
+      background-color: var(--cor1);
+      color: white;
+      padding: .3%;
+    }
+  }
+
+  #listaDesativo{
+    border: 1px solid black;
+    min-height: 30vh;
+
+    p{
+      padding: .5%;
+      margin-bottom: 2%;
+      font-size: 120%;
+    }
+   
+  }
+}
